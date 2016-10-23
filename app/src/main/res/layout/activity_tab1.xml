@@ -1,0 +1,88 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.nastya.Tab1Activity"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:orientation="vertical"
+    android:id="@+id/fragment">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/name"
+        android:layout_weight="1"
+        android:hint="@string/name" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/profession"
+        android:hint="@string/profession" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/custom_tab_layout_height">
+
+        <TableRow>
+            <CheckBox
+                android:id="@+id/chk1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"/>
+
+            <CheckBox
+                android:id="@+id/chk2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:checked="true"/>
+
+            <CheckBox
+                android:id="@+id/chk3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3" />
+
+        </TableRow>
+
+        <TableRow>
+            <CheckBox
+                android:id="@+id/chk4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4" />
+
+            <CheckBox
+                android:id="@+id/chk5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5" />
+
+            <CheckBox
+                android:id="@+id/chk6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:text="@string/submit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/submitBtn"
+        android:layout_weight="1" />
+
+
+</LinearLayout>
