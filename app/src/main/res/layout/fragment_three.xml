@@ -1,16 +1,30 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.nastya.ThreeFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:id="@+id/nameTextView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/three"
-        android:textSize="40sp"
-        android:textStyle="bold"
-        android:layout_centerInParent="true"/>
+        android:layout_height="wrap_content"
+        android:text="Name: " />
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/professionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Profession: " />
+
+    <Button
+        android:id="@+id/addProfileBtn"
+        android:text="@string/add_profile_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

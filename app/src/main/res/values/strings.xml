@@ -2,6 +2,8 @@
     <string name="app_name">MedConnect</string>
     <string name="action_settings">Settings</string>
 
+    <string name="dialog_message">Complete your profile</string>
+
     <string name="password_hint">Password</string>
     <string name="email_hint">Email</string>
     <string name="sign_up_button_label">Sign Up</string>
@@ -26,6 +28,7 @@
     <string name="name">Name</string>
     <string name="profession">Profession</string>
     <string name="submit_btn">Submit</string>
+    <string name="add_profile_btn">Add Profile</string>
     <string name="empty_data">Please, fill in your Name and Profession</string>
 
 </resources>
